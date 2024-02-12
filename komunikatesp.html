@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Otrzymany komunikat</title>
+</head>
+<body>
+    <h1>Komunikat z ESP32:</h1>
+    <div id="message"></div>
+    <script>
+        var params = new URLSearchParams(window.location.search);
+        var message = params.get('message');
+        document.getElementById('message').innerText = message;
+    </script>
+</body>
+</html>
